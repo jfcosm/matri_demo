@@ -58,6 +58,11 @@ export const HERO_TEXTS = {
   dateLocation: '15.08.2026 • Valdivia'
 };
 
+export const INSTAGRAM_DETAILS = {
+  hashtag: '#sofiymax2026',
+  url: 'https://www.instagram.com/explore/tags/sofiymax2026/'
+};
+
 export const WELCOME_TEXTS = {
   title: '¡Nos Casamos!',
   message: 'Hay momentos en la vida que son especiales por sí solos, pero compartirlos con las personas que quieres los hace inolvidables.'
