@@ -1,0 +1,7 @@
+
+node_modules
+dist
+.vercel
+.vscode
+*.log
+// v1.22 - Gitignore activo

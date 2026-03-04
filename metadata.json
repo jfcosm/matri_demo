@@ -1,0 +1,7 @@
+{
+  "name": "Rebe & Javi - Wedding Invitation",
+  "description": "A sophisticated, mobile-first digital wedding invitation for Rebe and Javi, featuring a countdown timer, event details, photo gallery, and RSVP management.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
