@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect, useCallback } from 'react';
-import { WEDDING_DATE } from '../constants';
+import { WEDDING_DATE, CALENDAR_DETAILS } from '../constants';
 import { CountdownTime } from '../types';
 
 const Countdown: React.FC = () => {
@@ -29,7 +29,7 @@ const Countdown: React.FC = () => {
     } else {
       setIsExpired(true);
     }
-    
+
     const timer = setInterval(() => {
       const updated = calculateTimeLeft();
       if (updated) {
@@ -72,12 +72,12 @@ const Countdown: React.FC = () => {
           </div>
         ))}
       </div>
-      
-      <button 
+
+      <button
         onClick={() => {
-          const title = `Boda de Rebe y Javi`;
+          const title = CALENDAR_DETAILS.title;
           const start = WEDDING_DATE.toISOString().replace(/-|:|\.\d\d\d/g, "");
-          window.open(`https://www.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(title)}&dates=${start}/${start}&details=¡No te pierdas el gran día!&location=La+Serena,+Chile`, '_blank');
+          window.open(`https://www.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(title)}&dates=${start}/${start}&details=${encodeURIComponent(CALENDAR_DETAILS.description)}&location=${encodeURIComponent(CALENDAR_DETAILS.location)}`, '_blank');
         }}
         className="flex items-center gap-2 bg-white border border-[#8fa189]/30 px-8 py-3 rounded-full text-[10px] text-[#8fa189] font-bold uppercase tracking-widest shadow-sm hover:shadow-md hover:bg-[#8fa189] hover:text-white transition-all active:scale-95"
       >

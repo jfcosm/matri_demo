@@ -21,23 +21,23 @@ const Details: React.FC = () => {
           <div className="flex items-center gap-8 mb-4">
             <div className="text-center">
               <span className="block text-2xl md:text-3xl font-light text-[#8fa189]">{CEREMONY_DETAILS.date}</span>
-              <span className="text-[9px] uppercase tracking-widest font-bold">2026</span>
+              <span className="text-[9px] uppercase tracking-widest font-bold">{CEREMONY_DETAILS.year}</span>
             </div>
             <div className="w-px h-10 bg-[#8fa189]/20"></div>
             <div className="text-center">
               <span className="block text-2xl md:text-3xl font-light text-[#8fa189]">{CEREMONY_DETAILS.time}</span>
-              <span className="text-[9px] uppercase tracking-widest font-bold">Puntual</span>
+              <span className="text-[9px] uppercase tracking-widest font-bold">{CEREMONY_DETAILS.timeNote}</span>
             </div>
           </div>
           <p className="text-xs italic text-gray-400 max-w-[200px]">{CEREMONY_DETAILS.address}</p>
         </div>
-        <a 
-          href={CEREMONY_DETAILS.mapUrl} 
-          target="_blank" 
+        <a
+          href={CEREMONY_DETAILS.mapUrl}
+          target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 border border-[#8fa189]/40 text-[#8fa189] px-8 py-3 rounded-full hover:bg-[#8fa189] hover:text-white transition-all text-[10px] uppercase tracking-widest font-bold shadow-sm"
         >
-          <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
           Cómo llegar
         </a>
       </div>
@@ -59,23 +59,23 @@ const Details: React.FC = () => {
           <div className="flex items-center gap-8 mb-4">
             <div className="text-center">
               <span className="block text-2xl md:text-3xl font-light text-[#8fa189]">{CELEBRATION_DETAILS.date}</span>
-              <span className="text-[9px] uppercase tracking-widest font-bold">15 SEPT</span>
+              <span className="text-[9px] uppercase tracking-widest font-bold">{CELEBRATION_DETAILS.year}</span>
             </div>
             <div className="w-px h-10 bg-[#8fa189]/20"></div>
             <div className="text-center">
               <span className="block text-2xl md:text-3xl font-light text-[#8fa189]">{CELEBRATION_DETAILS.time}</span>
-              <span className="text-[9px] uppercase tracking-widest font-bold">Cena</span>
+              <span className="text-[9px] uppercase tracking-widest font-bold">{CELEBRATION_DETAILS.timeNote}</span>
             </div>
           </div>
           <p className="text-xs italic text-gray-400 max-w-[200px]">{CELEBRATION_DETAILS.address}</p>
         </div>
-        <a 
-          href={CELEBRATION_DETAILS.mapUrl} 
-          target="_blank" 
+        <a
+          href={CELEBRATION_DETAILS.mapUrl}
+          target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 border border-[#8fa189]/40 text-[#8fa189] px-8 py-3 rounded-full hover:bg-[#8fa189] hover:text-white transition-all text-[10px] uppercase tracking-widest font-bold shadow-sm"
         >
-          <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
           Ver Ubicación
         </a>
       </div>

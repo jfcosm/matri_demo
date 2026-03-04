@@ -3,12 +3,13 @@
 // El mes en JS es 0-indexed (8 = Septiembre)
 export const WEDDING_DATE = new Date(2026, 8, 15, 16, 30, 0);
 
-export const BRIDE_NAME = 'Alison';
-export const GROOM_NAME = 'Javier';
+export const BRIDE_NAME = 'Sofi';
+export const GROOM_NAME = 'Max';
 
 // Número de teléfono para recibir confirmaciones (Formato internacional sin el +)
 // Por defecto se usará un número de ejemplo, cámbialo por el real.
-export const RSVP_PHONE_NUMBER = '56963516527'; 
+export const RSVP_PHONE_NUMBER = '56930781181';
+export const RSVP_DEADLINE_TEXT = 'Por favor, confirma antes del 15 de Agosto';
 
 export const COLORS = {
   sage: '#8fa189',
@@ -19,19 +20,23 @@ export const COLORS = {
 };
 
 export const CEREMONY_DETAILS = {
-  venue: 'Iglesia San Francisco',
+  venue: 'Catedral de Valdivia',
   time: '16:30 HRS',
-  date: '15 SEPT',
-  address: 'La Serena, Región de Coquimbo',
-  mapUrl: 'https://maps.google.com/?q=Iglesia+San+Francisco+La+Serena'
+  timeNote: 'Puntual',
+  date: '15 AGOSTO',
+  year: '2026',
+  address: 'Valdivia, Región de Los Ríos',
+  mapUrl: 'https://maps.google.com/?q=Catedral+de+Valdivia'
 };
 
 export const CELEBRATION_DETAILS = {
-  venue: 'Espacio Serena Norte',
+  venue: 'Centro de Eventos Mahuiza',
   time: '19:00 HRS',
-  date: '15 SEPT',
-  address: 'Sector Norte, La Serena',
-  mapUrl: 'https://maps.google.com/?q=Espacio+Serena+Norte+La+Serena'
+  timeNote: 'Cena',
+  date: '15 AGOSTO',
+  year: '2026',
+  address: 'Valdivia, Región de Los Ríos',
+  mapUrl: 'https://maps.google.com/?q=Centro+de+Eventos+Mahuiza+Valdivia'
 };
 
 export const GALLERY_IMAGES = [
@@ -46,5 +51,29 @@ export const GALLERY_IMAGES = [
 export const HERO_IMAGE = {
   url: 'matri_hero.jpg',
   placeholder: 'https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&q=80&w=1000'
+};
+
+export const HERO_TEXTS = {
+  subtitle: 'Nuestra Boda',
+  dateLocation: '15.08.2026 • Valdivia'
+};
+
+export const WELCOME_TEXTS = {
+  title: '¡Nos Casamos!',
+  message: 'Hay momentos en la vida que son especiales por sí solos, pero compartirlos con las personas que quieres los hace inolvidables.'
+};
+
+export const CALENDAR_DETAILS = {
+  title: 'Boda de Sofi y Max',
+  location: 'Valdivia, Chile',
+  description: '¡No te pierdas el gran día!'
+};
+
+export const BANK_DATA = {
+  banco: "BCI / Banco Crédito e Inversiones",
+  tipo: "Cuenta Corriente",
+  numero: "777877642",
+  rut: "18.247.442-K",
+  titular: "MAXIMILIANO SEGURA"
 };
 // v1.14 - Añadido número de contacto para RSVP.
