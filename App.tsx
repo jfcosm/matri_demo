@@ -1,5 +1,5 @@
-
 import React from 'react';
+import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Countdown from './components/Countdown';
 import Details from './components/Details';
@@ -7,17 +7,23 @@ import Gallery from './components/Gallery';
 import RSVPForm from './components/RSVPForm';
 import GiftSection from './components/GiftSection';
 import Footer from './components/Footer';
-import { WELCOME_TEXTS } from './constants';
+import { useAppContext } from './context/AppContext';
+import { TEMPLATES } from './data/templates';
 
 const App: React.FC = () => {
+  const { currentTemplate, t } = useAppContext();
+  const activeTemplate = TEMPLATES.find(temp => temp.id === currentTemplate) || TEMPLATES[0];
+  const { features } = activeTemplate;
+
   return (
     <div className="min-h-screen font-sans bg-[#fdfcfb] selection:bg-[#8fa189] selection:text-white overflow-x-hidden">
+      <Navbar />
       <main className="opacity-100 scale-100 transition-opacity duration-1000">
         <Hero />
 
-        <div className="max-w-6xl mx-auto px-6 pb-20 space-y-24 md:space-y-32">
+        <div className="max-w-6xl mx-auto px-6 pb-20 pt-10 space-y-24 md:space-y-32">
 
-          <section id="welcome" className="text-center pt-16 md:pt-24 animate-in fade-in slide-in-from-bottom-4 duration-1000 max-w-2xl mx-auto">
+          <section id="welcome" className="text-center pt-8 md:pt-16 animate-in fade-in slide-in-from-bottom-4 duration-1000 max-w-2xl mx-auto">
             <div className="flex justify-center mb-6">
               <div className="w-12 h-px bg-[#8fa189]/30 self-center"></div>
               <div className="mx-4 text-[#8fa189]">
@@ -25,33 +31,52 @@ const App: React.FC = () => {
               </div>
               <div className="w-12 h-px bg-[#8fa189]/30 self-center"></div>
             </div>
-            <h2 className="font-serif italic text-4xl md:text-5xl mb-6 text-gray-800">{WELCOME_TEXTS.title}</h2>
+            <h2 className="font-serif italic text-4xl md:text-5xl mb-6 text-gray-800">
+              {t(`${currentTemplate}.welcome.title`)}
+            </h2>
             <p className="text-gray-500 leading-relaxed font-light text-sm md:text-base px-4">
-              {WELCOME_TEXTS.message}
+              {t(`${currentTemplate}.welcome.message`)}
             </p>
           </section>
 
-          <div className="max-w-lg mx-auto w-full">
-            <Countdown />
-          </div>
+          {features.showCountdown && (
+            <div className="max-w-lg mx-auto w-full">
+              <Countdown />
+            </div>
+          )}
 
           <Details />
 
-          <section id="gallery" className="space-y-10">
-            <div className="text-center">
-              <h3 className="uppercase tracking-[0.3em] font-bold text-xs text-gray-400 mb-2">Nuestro Álbum</h3>
-              <p className="font-serif italic text-xl md:text-2xl text-gray-800 mb-8">Momentos juntos</p>
+          {features.showGallery && (
+            <section id="gallery" className="space-y-10">
+              <div className="text-center">
+                <h3 className="uppercase tracking-[0.3em] font-bold text-xs text-gray-400 mb-2">Nuestro Álbum</h3>
+                <p className="font-serif italic text-xl md:text-2xl text-gray-800 mb-8">Momentos juntos</p>
+              </div>
+              <Gallery />
+            </section>
+          )}
+
+          {features.showTickets && (
+            <section className="text-center py-12">
+              <h3 className="font-serif italic text-3xl text-gray-800 mb-4">Adquiere tus entradas</h3>
+              <button className="bg-gray-900 text-white px-8 py-3 rounded-full hover:bg-gray-800 transition-colors uppercase tracking-widest text-xs font-bold">
+                Comprar ahora
+              </button>
+            </section>
+          )}
+
+          {features.showGiftSection && (
+            <div className="max-w-2xl mx-auto w-full">
+              <GiftSection />
             </div>
-            <Gallery />
-          </section>
+          )}
 
-          <div className="max-w-2xl mx-auto w-full">
-            <GiftSection />
-          </div>
-
-          <div className="max-w-2xl mx-auto w-full">
-            <RSVPForm />
-          </div>
+          {features.showRSVP && (
+            <div className="max-w-2xl mx-auto w-full">
+              <RSVPForm />
+            </div>
+          )}
         </div>
 
         <Footer />

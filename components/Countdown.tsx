@@ -1,15 +1,23 @@
 
-import React, { useState, useEffect, useCallback } from 'react';
-import { WEDDING_DATE, CALENDAR_DETAILS } from '../constants';
+import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import { CountdownTime } from '../types';
+import { useAppContext } from '../context/AppContext';
 
 const Countdown: React.FC = () => {
+  const { currentTemplate, t } = useAppContext();
   const [timeLeft, setTimeLeft] = useState<CountdownTime>({ days: 0, hours: 0, minutes: 0, seconds: 0 });
   const [isExpired, setIsExpired] = useState(false);
 
+  // Parse dynamic date or fallback to something far ahead
+  const targetDate = useMemo(() => {
+    const dateStr = t(`${currentTemplate}.date`);
+    const parsed = new Date(dateStr);
+    return isNaN(parsed.getTime()) ? new Date('2030-01-01T00:00:00') : parsed;
+  }, [currentTemplate, t]);
+
   const calculateTimeLeft = useCallback(() => {
     const now = new Date().getTime();
-    const difference = WEDDING_DATE.getTime() - now;
+    const difference = targetDate.getTime() - now;
 
     if (difference > 0) {
       return {
@@ -20,7 +28,7 @@ const Countdown: React.FC = () => {
       };
     }
     return null;
-  }, []);
+  }, [targetDate]);
 
   useEffect(() => {
     const initial = calculateTimeLeft();
@@ -75,9 +83,11 @@ const Countdown: React.FC = () => {
 
       <button
         onClick={() => {
-          const title = CALENDAR_DETAILS.title;
-          const start = WEDDING_DATE.toISOString().replace(/-|:|\.\d\d\d/g, "");
-          window.open(`https://www.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(title)}&dates=${start}/${start}&details=${encodeURIComponent(CALENDAR_DETAILS.description)}&location=${encodeURIComponent(CALENDAR_DETAILS.location)}`, '_blank');
+          const title = t(`${currentTemplate}.calendar.title`);
+          const location = t(`${currentTemplate}.calendar.location`);
+          const description = t(`${currentTemplate}.calendar.description`);
+          const start = targetDate.toISOString().replace(/-|:|\.\d\d\d/g, "");
+          window.open(`https://www.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(title)}&dates=${start}/${start}&details=${encodeURIComponent(description)}&location=${encodeURIComponent(location)}`, '_blank');
         }}
         className="flex items-center gap-2 bg-white border border-[#8fa189]/30 px-8 py-3 rounded-full text-[10px] text-[#8fa189] font-bold uppercase tracking-widest shadow-sm hover:shadow-md hover:bg-[#8fa189] hover:text-white transition-all active:scale-95"
       >
