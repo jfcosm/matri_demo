@@ -37,7 +37,7 @@ const TechnicalProposal: React.FC<Props> = ({ onClose }) => {
             </li>
           </ul>
 
-          <div className="bg-white/10 border-[var(--color-text)] border-opacity-10 p-4 rounded-lg border border-[var(--color-text)] border-opacity-10">
+          <div className="bg-[var(--color-surface)] border-[var(--color-text)] border-opacity-10 p-4 rounded-lg border border-[var(--color-text)] border-opacity-10">
             <p className="text-xs italic">
               He preparado una <strong>versión funcional de alta fidelidad</strong> basada en el video adjunto para que puedas validar la experiencia de usuario inmediatamente.
             </p>
@@ -46,7 +46,7 @@ const TechnicalProposal: React.FC<Props> = ({ onClose }) => {
 
         <button 
           onClick={onClose}
-          className="bg-[var(--color-primary)] text-white px-8 py-3 rounded-full font-medium tracking-wide hover:bg-[var(--color-primary)] transition-all transform hover:scale-105 active:scale-95"
+          className="bg-[var(--color-primary)] text-[var(--color-primary-text)] px-8 py-3 rounded-full font-medium tracking-wide hover:bg-[var(--color-primary)] transition-all transform hover:scale-105 active:scale-95"
         >
           Ver Prototipo Funcional
         </button>

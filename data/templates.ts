@@ -20,7 +20,9 @@ export interface TemplateFeatures {
 
 export interface TemplateTheme {
     primary: string;
+    primaryText: string;
     background: string;
+    surface: string;
     text: string;
     fonts: {
         script: string;
@@ -47,10 +49,12 @@ export const TEMPLATES: Template[] = [
         features: { showCountdown: true, showGallery: true, showGiftSection: true, showRSVP: true, showTickets: false },
         theme: {
             primary: '#8fa189',
+            primaryText: '#ffffff',
             background: '#fdfcfb',
+            surface: 'rgba(0,0,0,0.05)',
             text: '#4a4a4a',
             fonts: { script: 'Great Vibes', serif: 'Playfair Display', sans: 'Montserrat' },
-            heroImage: { url: 'matri_hero.jpg', placeholder: 'https://picsum.photos/seed/44c2ag/1000/800' }
+            heroImage: { url: 'matri_hero.jpg', placeholder: 'https://loremflickr.com/1000/800/wedding' }
         }
     },
     {
@@ -59,10 +63,12 @@ export const TEMPLATES: Template[] = [
         features: { showCountdown: true, showGallery: true, showGiftSection: false, showRSVP: true, showTickets: false },
         theme: {
             primary: '#FF6B6B',
+            primaryText: '#ffffff',
             background: '#F0F8FF',
+            surface: 'rgba(47,79,79,0.05)',
             text: '#2F4F4F',
             fonts: { script: 'Fredoka', serif: 'Comic Neue', sans: 'Quicksand' },
-            heroImage: { url: 'https://picsum.photos/seed/7v82g/1000/800', placeholder: 'https://picsum.photos/seed/e07pz5/1000/800' }
+            heroImage: { url: 'https://loremflickr.com/1000/800/kids,birthday,party', placeholder: 'https://loremflickr.com/1000/800/kids,birthday' }
         }
     },
     {
@@ -71,10 +77,12 @@ export const TEMPLATES: Template[] = [
         features: { showCountdown: true, showGallery: true, showGiftSection: true, showRSVP: true, showTickets: false },
         theme: {
             primary: '#D4AF37',
+            primaryText: '#121212',
             background: '#121212',
+            surface: 'rgba(255,255,255,0.05)',
             text: '#E0E0E0',
             fonts: { script: 'Dancing Script', serif: 'Cinzel', sans: 'Lato' },
-            heroImage: { url: 'https://picsum.photos/seed/sms6zs/1000/800', placeholder: 'https://picsum.photos/seed/5y81ko/1000/800' }
+            heroImage: { url: 'https://loremflickr.com/1000/800/champagne,party', placeholder: 'https://loremflickr.com/1000/800/champagne' }
         }
     },
     {
@@ -82,11 +90,13 @@ export const TEMPLATES: Template[] = [
         name: 'Bautizo / Comunión',
         features: { showCountdown: true, showGallery: true, showGiftSection: false, showRSVP: true, showTickets: false },
         theme: {
-            primary: '#AEC6CF',
+            primary: '#87CEFA',
+            primaryText: '#ffffff',
             background: '#FFFFFF',
+            surface: 'rgba(85,85,85,0.05)',
             text: '#555555',
             fonts: { script: 'Alex Brush', serif: 'Lora', sans: 'Open Sans' },
-            heroImage: { url: 'https://picsum.photos/seed/7u3tut/1000/800', placeholder: 'https://picsum.photos/seed/o9j6fs/1000/800' }
+            heroImage: { url: 'https://loremflickr.com/1000/800/baptism,church', placeholder: 'https://loremflickr.com/1000/800/baptism' }
         }
     },
     {
@@ -95,10 +105,12 @@ export const TEMPLATES: Template[] = [
         features: { showCountdown: true, showGallery: true, showGiftSection: false, showRSVP: false, showTickets: true },
         theme: {
             primary: '#FF00FF',
+            primaryText: '#ffffff',
             background: '#0a0a0a',
+            surface: 'rgba(255,255,255,0.1)',
             text: '#ffffff',
             fonts: { script: 'Permanent Marker', serif: 'Russo One', sans: 'Roboto Mono' },
-            heroImage: { url: 'https://picsum.photos/seed/iyrab/1000/800', placeholder: 'https://picsum.photos/seed/v8l66f/1000/800' }
+            heroImage: { url: 'https://loremflickr.com/1000/800/concert,live', placeholder: 'https://loremflickr.com/1000/800/concert' }
         }
     },
     {
@@ -107,10 +119,12 @@ export const TEMPLATES: Template[] = [
         features: { showCountdown: true, showGallery: false, showGiftSection: false, showRSVP: true, showTickets: false },
         theme: {
             primary: '#0056b3',
+            primaryText: '#ffffff',
             background: '#f8f9fa',
+            surface: 'rgba(0,0,0,0.05)',
             text: '#212529',
             fonts: { script: 'Caveat', serif: 'Merriweather', sans: 'Inter' },
-            heroImage: { url: 'https://picsum.photos/seed/mhjaw7/1000/800', placeholder: 'https://picsum.photos/seed/hikrm/1000/800' }
+            heroImage: { url: 'https://loremflickr.com/1000/800/conference,business', placeholder: 'https://loremflickr.com/1000/800/business' }
         }
     },
     {
@@ -119,10 +133,12 @@ export const TEMPLATES: Template[] = [
         features: { showCountdown: true, showGallery: true, showGiftSection: false, showRSVP: true, showTickets: false },
         theme: {
             primary: '#8b4513',
+            primaryText: '#ffffff',
             background: '#fff8dc',
+            surface: 'rgba(62,39,35,0.08)',
             text: '#3e2723',
             fonts: { script: 'Homemade Apple', serif: 'Crimson Text', sans: 'PT Sans' },
-            heroImage: { url: 'https://picsum.photos/seed/kf5djv/1000/800', placeholder: 'https://picsum.photos/seed/ow9p6l/1000/800' }
+            heroImage: { url: 'https://loremflickr.com/1000/800/library,books', placeholder: 'https://loremflickr.com/1000/800/books' }
         }
     },
     {
@@ -131,10 +147,12 @@ export const TEMPLATES: Template[] = [
         features: { showCountdown: true, showGallery: true, showGiftSection: false, showRSVP: true, showTickets: true },
         theme: {
             primary: '#a2a2bd',
+            primaryText: '#101020',
             background: '#0a0a1a',
+            surface: 'rgba(255,255,255,0.08)',
             text: '#f5f5f5',
             fonts: { script: 'Pinyon Script', serif: 'Cormorant Garamond', sans: 'Raleway' },
-            heroImage: { url: 'https://picsum.photos/seed/rctgz/1000/800', placeholder: 'https://picsum.photos/seed/plgown/1000/800' }
+            heroImage: { url: 'https://loremflickr.com/1000/800/elegant,gala', placeholder: 'https://loremflickr.com/1000/800/elegant' }
         }
     },
     {
@@ -142,11 +160,13 @@ export const TEMPLATES: Template[] = [
         name: 'Baby Shower',
         features: { showCountdown: true, showGallery: true, showGiftSection: true, showRSVP: true, showTickets: false },
         theme: {
-            primary: '#FFB6C1',
+            primary: '#D87093',
+            primaryText: '#ffffff',
             background: '#FFFAFA',
+            surface: 'rgba(105,105,105,0.05)',
             text: '#696969',
             fonts: { script: 'Pacifico', serif: 'Balsamiq Sans', sans: 'Nunito' },
-            heroImage: { url: 'https://picsum.photos/seed/sfmcmb/1000/800', placeholder: 'https://picsum.photos/seed/lnlg7r/1000/800' }
+            heroImage: { url: 'https://loremflickr.com/1000/800/baby,toys', placeholder: 'https://loremflickr.com/1000/800/baby' }
         }
     },
     {
@@ -155,10 +175,12 @@ export const TEMPLATES: Template[] = [
         features: { showCountdown: true, showGallery: false, showGiftSection: false, showRSVP: true, showTickets: false },
         theme: {
             primary: '#2E8B57',
+            primaryText: '#ffffff',
             background: '#ffffff',
+            surface: 'rgba(51,51,51,0.05)',
             text: '#333333',
             fonts: { script: 'Satisfy', serif: 'Libre Baskerville', sans: 'Work Sans' },
-            heroImage: { url: 'https://picsum.photos/seed/bgv5xf/1000/800', placeholder: 'https://picsum.photos/seed/vcu6a/1000/800' }
+            heroImage: { url: 'https://loremflickr.com/1000/800/dining,corporate', placeholder: 'https://loremflickr.com/1000/800/dinner' }
         }
     }
 ];

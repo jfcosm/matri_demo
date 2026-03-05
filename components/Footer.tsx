@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
         <p className="text-[9px] text-[var(--color-text)] opacity-50 uppercase tracking-[0.3em] font-bold mb-4">
           Invitación desarrollada por <a href="https://www.melodialab.net" target="_blank" rel="noopener noreferrer" className="text-[var(--color-primary)] underline underline-offset-4 hover:text-[var(--color-primary)] transition-colors">MelodIA lab</a>
         </p>
-        <div className="w-12 h-px bg-white/20 mx-auto"></div>
+        <div className="w-12 h-px bg-[var(--color-text)] opacity-10 mx-auto"></div>
         <p className="mt-4 text-[8px] text-[var(--color-text)] opacity-40 uppercase tracking-widest">© 2026 • Hecho con amor</p>
       </div>
     </footer>

@@ -30,7 +30,7 @@ const Details: React.FC = () => {
       {events.map((event, index) => (
         <div key={index} className="text-center space-y-4 group p-8 rounded-3xl border border-transparent hover:border-[var(--color-primary)]/10 hover:bg-white hover:shadow-xl transition-all duration-500">
           <div className="flex justify-center mb-2">
-            <div className="p-5 bg-[var(--color-bg)] rounded-full transition-all group-hover:bg-[var(--color-primary)] group-hover:text-white duration-500 text-[var(--color-primary)]">
+            <div className="p-5 bg-[var(--color-bg)] rounded-full transition-all group-hover:bg-[var(--color-primary)] group-hover:text-[var(--color-primary-text)] duration-500 text-[var(--color-primary)]">
               {/* Dynamic icon selection based on index (just a simple toggle for two events, could map more shapes) */}
               {index === 0 ? (
                 <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -65,7 +65,7 @@ const Details: React.FC = () => {
             href={event.mapUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 border border-[var(--color-primary)]/40 text-[var(--color-primary)] px-8 py-3 rounded-full hover:bg-[var(--color-primary)] hover:text-white transition-all text-[10px] uppercase tracking-widest font-bold shadow-sm"
+            className="inline-flex items-center gap-2 border border-[var(--color-primary)]/40 text-[var(--color-primary)] px-8 py-3 rounded-full hover:bg-[var(--color-primary)] hover:text-[var(--color-primary-text)] transition-all text-[10px] uppercase tracking-widest font-bold shadow-sm"
           >
             <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
             {event.mapText}

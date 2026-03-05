@@ -34,7 +34,9 @@ const App: React.FC = () => {
 
   const cssVariables = {
     '--color-primary': theme.primary,
+    '--color-primary-text': theme.primaryText,
     '--color-bg': theme.background,
+    '--color-surface': theme.surface,
     '--color-text': theme.text,
     '--font-script': `"${theme.fonts.script}", cursive`,
     '--font-serif': `"${theme.fonts.serif}", serif`,
