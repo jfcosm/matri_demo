@@ -54,7 +54,7 @@ export const TEMPLATES: Template[] = [
             surface: 'rgba(0,0,0,0.05)',
             text: '#4a4a4a',
             fonts: { script: 'Great Vibes', serif: 'Playfair Display', sans: 'Montserrat' },
-            heroImage: { url: 'matri_hero.jpg', placeholder: 'https://loremflickr.com/1000/800/wedding' }
+            heroImage: { url: 'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1000&q=80', placeholder: 'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1000&q=80' }
         }
     },
     {
@@ -68,7 +68,7 @@ export const TEMPLATES: Template[] = [
             surface: 'rgba(47,79,79,0.05)',
             text: '#2F4F4F',
             fonts: { script: 'Fredoka', serif: 'Comic Neue', sans: 'Quicksand' },
-            heroImage: { url: 'https://loremflickr.com/1000/800/kids,birthday,party', placeholder: 'https://loremflickr.com/1000/800/kids,birthday' }
+            heroImage: { url: 'https://images.unsplash.com/photo-1530103862677-de3e1c6628b0?auto=format&fit=crop&w=1000&q=80', placeholder: 'https://images.unsplash.com/photo-1530103862677-de3e1c6628b0?auto=format&fit=crop&w=1000&q=80' }
         }
     },
     {
@@ -82,7 +82,7 @@ export const TEMPLATES: Template[] = [
             surface: 'rgba(255,255,255,0.05)',
             text: '#E0E0E0',
             fonts: { script: 'Dancing Script', serif: 'Cinzel', sans: 'Lato' },
-            heroImage: { url: 'https://loremflickr.com/1000/800/champagne,party', placeholder: 'https://loremflickr.com/1000/800/champagne' }
+            heroImage: { url: 'https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=1000&q=80', placeholder: 'https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=1000&q=80' }
         }
     },
     {
@@ -96,7 +96,7 @@ export const TEMPLATES: Template[] = [
             surface: 'rgba(85,85,85,0.05)',
             text: '#555555',
             fonts: { script: 'Alex Brush', serif: 'Lora', sans: 'Open Sans' },
-            heroImage: { url: 'https://loremflickr.com/1000/800/baptism,church', placeholder: 'https://loremflickr.com/1000/800/baptism' }
+            heroImage: { url: 'https://images.unsplash.com/photo-1438032005730-c7a3e01160ee?auto=format&fit=crop&w=1000&q=80', placeholder: 'https://images.unsplash.com/photo-1438032005730-c7a3e01160ee?auto=format&fit=crop&w=1000&q=80' }
         }
     },
     {
@@ -110,7 +110,7 @@ export const TEMPLATES: Template[] = [
             surface: 'rgba(255,255,255,0.1)',
             text: '#ffffff',
             fonts: { script: 'Permanent Marker', serif: 'Russo One', sans: 'Roboto Mono' },
-            heroImage: { url: 'https://loremflickr.com/1000/800/concert,live', placeholder: 'https://loremflickr.com/1000/800/concert' }
+            heroImage: { url: 'https://images.unsplash.com/photo-1540039155732-d674d5e8fee0?auto=format&fit=crop&w=1000&q=80', placeholder: 'https://images.unsplash.com/photo-1540039155732-d674d5e8fee0?auto=format&fit=crop&w=1000&q=80' }
         }
     },
     {
@@ -124,7 +124,7 @@ export const TEMPLATES: Template[] = [
             surface: 'rgba(0,0,0,0.05)',
             text: '#212529',
             fonts: { script: 'Caveat', serif: 'Merriweather', sans: 'Inter' },
-            heroImage: { url: 'https://loremflickr.com/1000/800/conference,business', placeholder: 'https://loremflickr.com/1000/800/business' }
+            heroImage: { url: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1000&q=80', placeholder: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1000&q=80' }
         }
     },
     {
@@ -138,7 +138,7 @@ export const TEMPLATES: Template[] = [
             surface: 'rgba(62,39,35,0.08)',
             text: '#3e2723',
             fonts: { script: 'Homemade Apple', serif: 'Crimson Text', sans: 'PT Sans' },
-            heroImage: { url: 'https://loremflickr.com/1000/800/library,books', placeholder: 'https://loremflickr.com/1000/800/books' }
+            heroImage: { url: 'https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=1000&q=80', placeholder: 'https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=1000&q=80' }
         }
     },
     {
@@ -152,7 +152,7 @@ export const TEMPLATES: Template[] = [
             surface: 'rgba(255,255,255,0.08)',
             text: '#f5f5f5',
             fonts: { script: 'Pinyon Script', serif: 'Cormorant Garamond', sans: 'Raleway' },
-            heroImage: { url: 'https://loremflickr.com/1000/800/elegant,gala', placeholder: 'https://loremflickr.com/1000/800/elegant' }
+            heroImage: { url: 'https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&w=1000&q=80', placeholder: 'https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&w=1000&q=80' }
         }
     },
     {
@@ -166,7 +166,7 @@ export const TEMPLATES: Template[] = [
             surface: 'rgba(105,105,105,0.05)',
             text: '#696969',
             fonts: { script: 'Pacifico', serif: 'Balsamiq Sans', sans: 'Nunito' },
-            heroImage: { url: 'https://loremflickr.com/1000/800/baby,toys', placeholder: 'https://loremflickr.com/1000/800/baby' }
+            heroImage: { url: 'https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=1000&q=80', placeholder: 'https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=1000&q=80' }
         }
     },
     {
@@ -180,7 +180,7 @@ export const TEMPLATES: Template[] = [
             surface: 'rgba(51,51,51,0.05)',
             text: '#333333',
             fonts: { script: 'Satisfy', serif: 'Libre Baskerville', sans: 'Work Sans' },
-            heroImage: { url: 'https://loremflickr.com/1000/800/dining,corporate', placeholder: 'https://loremflickr.com/1000/800/dinner' }
+            heroImage: { url: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1000&q=80', placeholder: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1000&q=80' }
         }
     }
 ];

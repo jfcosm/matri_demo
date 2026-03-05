@@ -21,7 +21,8 @@ const Hero: React.FC = () => {
             (e.target as HTMLImageElement).src = heroImage.placeholder;
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent"></div>
+        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
       </div>
 
       {/* Content */}
