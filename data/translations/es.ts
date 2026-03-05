@@ -65,6 +65,7 @@ export const es: TranslationDictionary = {
     'classic_wedding.events.1.mapText': 'Ver Ubicación',
 
     'classic_wedding.date': '2026-09-15T16:30:00',
+    'classic_wedding.gallery.hashtag': '#sofiymax2026',
     'classic_wedding.calendar.title': 'Boda de Sofi y Max',
     'classic_wedding.calendar.location': 'Valdivia, Chile',
     'classic_wedding.calendar.description': '¡No te pierdas el gran día!',
@@ -78,7 +79,7 @@ export const es: TranslationDictionary = {
 
     // 2. Kids Birthday
     'kids_birthday.hero.subtitle': '¡Estás Invitado!',
-    'kids_birthday.hero.names': 'Lucas cumple 5',
+    'kids_birthday.hero.names': 'Lucas',
     'kids_birthday.hero.dateLocation': '12 Octubre • Chuck E. Cheese',
     'kids_birthday.welcome.title': '¡A Jugar!',
     'kids_birthday.welcome.message': 'Ven a celebrar junto a Lucas en una tarde llena de juegos, pizzas y mucha diversión.',
@@ -97,14 +98,15 @@ export const es: TranslationDictionary = {
 
     'kids_birthday.date': '2026-10-12T15:00:00',
     'kids_birthday.calendar.title': 'Cumpleaños de Lucas',
+    'kids_birthday.gallery.hashtag': '#lucas5años',
     'kids_birthday.calendar.location': 'Chuck E. Cheese, Av. Las Condes',
     'kids_birthday.calendar.description': 'Acompáñanos a celebrar los 5 años de Lucas.',
 
-    'kids_birthday.rsvp.hostName': 'la familia de Lucas',
+    'kids_birthday.rsvp.hostName': 'Lucas',
 
     // 3. Adult Birthday
     'adult_birthday.hero.subtitle': 'Cambio de Folio',
-    'adult_birthday.hero.names': 'Los 40 de Andrés',
+    'adult_birthday.hero.names': 'Valentina',
     'adult_birthday.hero.dateLocation': '20 Noviembre • Santiago',
     'adult_birthday.welcome.title': '¡A Celebrar!',
     'adult_birthday.welcome.message': 'Se viene un hito importante y quiero tirar la casa por la ventana. ¡Acompáñame a celebrar mis 40!',
@@ -122,7 +124,8 @@ export const es: TranslationDictionary = {
     'adult_birthday.events.0.mapText': 'Ver Mapa',
 
     'adult_birthday.date': '2026-11-20T21:30:00',
-    'adult_birthday.calendar.title': 'Cumpleaños Andrés',
+    'adult_birthday.calendar.title': 'Mis 30 - Valentina',
+    'adult_birthday.gallery.hashtag': '#vale30',
     'adult_birthday.calendar.location': 'Santiago',
     'adult_birthday.calendar.description': 'Tremendo carrete',
 
@@ -131,11 +134,11 @@ export const es: TranslationDictionary = {
     'adult_birthday.bank.numero': '123456789',
     'adult_birthday.bank.rut': '12.345.678-9',
     'adult_birthday.bank.titular': 'ANDRÉS FUENTES',
-    'adult_birthday.rsvp.hostName': 'Andrés',
+    'adult_birthday.rsvp.hostName': 'Vale',
 
     // 4. Religious Ceremony
     'religious_ceremony.hero.subtitle': 'Mi Bautizo',
-    'religious_ceremony.hero.names': 'Emma',
+    'religious_ceremony.hero.names': 'Santiago',
     'religious_ceremony.hero.dateLocation': '05 Mayo • Parroquia San Lázaro',
     'religious_ceremony.welcome.title': 'Con la bendición de Dios',
     'religious_ceremony.welcome.message': 'Que la luz de la fe guíe tus pasos hoy y siempre. Te invitamos a ser parte de este importante momento.',
@@ -164,15 +167,16 @@ export const es: TranslationDictionary = {
     'religious_ceremony.events.1.mapText': 'Llegar al almuerzo',
 
     'religious_ceremony.date': '2026-05-05T11:30:00',
-    'religious_ceremony.calendar.title': 'Bautizo de Emma',
+    'religious_ceremony.calendar.title': 'Bautizo de Santiago',
+    'religious_ceremony.gallery.hashtag': '#bautizosanti',
     'religious_ceremony.calendar.location': 'Parroquia San Lázaro',
     'religious_ceremony.calendar.description': 'Día especial',
 
-    'religious_ceremony.rsvp.hostName': 'la familia',
+    'religious_ceremony.rsvp.hostName': 'Santi',
 
     // 5. Live Concert
     'live_concert.hero.subtitle': 'Tour Despertar',
-    'live_concert.hero.names': 'Los Ecos',
+    'live_concert.hero.names': 'The Rockers',
     'live_concert.hero.dateLocation': '18 Julio • Sala SCD Bellavista',
     'live_concert.welcome.title': 'Lanzamiento Oficial',
     'live_concert.welcome.message': 'Ven a disfrutar en vivo del lanzamiento de nuestro nuevo disco "Despertar".',
@@ -190,15 +194,16 @@ export const es: TranslationDictionary = {
     'live_concert.events.0.mapText': 'Ir al venue',
 
     'live_concert.date': '2026-07-18T20:00:00',
-    'live_concert.calendar.title': 'Los Ecos - En vivo',
+    'live_concert.calendar.title': 'The Rockers Live',
+    'live_concert.gallery.hashtag': '#therockerslive',
     'live_concert.calendar.location': 'SCD Bellavista',
     'live_concert.calendar.description': 'Recital',
 
-    'live_concert.rsvp.hostName': 'la banda',
+    'live_concert.rsvp.hostName': 'The Rockers',
 
     // 6. B2B Activation
     'b2b_activation.hero.subtitle': 'InnovaTech Summit 2026',
-    'b2b_activation.hero.names': 'TechSolutions',
+    'b2b_activation.hero.names': 'InnovaTech 2026',
     'b2b_activation.hero.dateLocation': '02 Junio • Hotel W',
     'b2b_activation.welcome.title': 'El futuro es hoy',
     'b2b_activation.welcome.message': 'Únete a los líderes de la industria en un evento exclusivo sobre Inteligencia Artificial y Transformación Digital.',
@@ -216,14 +221,15 @@ export const es: TranslationDictionary = {
     'b2b_activation.events.0.mapText': 'Ubicación',
 
     'b2b_activation.date': '2026-06-02T09:00:00',
-    'b2b_activation.calendar.title': 'InnovaTech 2026',
+    'b2b_activation.calendar.title': 'InnovaTech Summit',
+    'b2b_activation.gallery.hashtag': '#innovatech2026',
     'b2b_activation.calendar.location': 'Hotel W',
     'b2b_activation.calendar.description': 'Tech Summit',
-    'b2b_activation.rsvp.hostName': 'el equipo de TechSolutions',
+    'b2b_activation.rsvp.hostName': 'InnovaTech',
 
     // 7. Book Launch
     'book_launch.hero.subtitle': 'Lanzamiento Exclusivo',
-    'book_launch.hero.names': 'Susurros en el Viento',
+    'book_launch.hero.names': 'El Despertar',
     'book_launch.hero.dateLocation': '10 Septiembre • Librería Antártica',
     'book_launch.welcome.title': 'Nueva Novela',
     'book_launch.welcome.message': 'Acompáñame en la presentación oficial de mi nueva novela "Susurros en el Viento" por Camila Valdés.',
@@ -241,14 +247,15 @@ export const es: TranslationDictionary = {
     'book_launch.events.0.mapText': 'Cómo llegar',
 
     'book_launch.date': '2026-09-10T19:30:00',
-    'book_launch.calendar.title': 'Book Launch C. Valdés',
+    'book_launch.calendar.title': 'Lanzamiento: El Despertar',
+    'book_launch.gallery.hashtag': '#eldespertarlibro',
     'book_launch.calendar.location': 'Librería Central',
     'book_launch.calendar.description': 'Presentación del libro',
-    'book_launch.rsvp.hostName': 'Camila',
+    'book_launch.rsvp.hostName': 'Editorial M',
 
     // 8. Gala
     'gala.hero.subtitle': 'Promoción 2026',
-    'gala.hero.names': 'Gala de Medicina',
+    'gala.hero.names': 'Generación 26',
     'gala.hero.dateLocation': '12 Diciembre • Casapiedra',
     'gala.welcome.title': '¡Lo Logramos!',
     'gala.welcome.message': 'Fueron 7 años de esfuerzo y sacrificio. Hoy toca celebrar el inicio de una nueva etapa profesional.',
@@ -266,14 +273,15 @@ export const es: TranslationDictionary = {
     'gala.events.0.mapText': 'Mapa del Venue',
 
     'gala.date': '2026-12-12T20:00:00',
-    'gala.calendar.title': 'Gala Medicina 2026',
+    'gala.calendar.title': 'Gala de Graduación',
+    'gala.gallery.hashtag': '#gala2026',
     'gala.calendar.location': 'Casapiedra',
     'gala.calendar.description': 'Cena de titulación',
-    'gala.rsvp.hostName': 'la comisión organizadora',
+    'gala.rsvp.hostName': 'Comité Gen26',
 
     // 9. Baby Shower
     'baby_shower.hero.subtitle': '¡Dulce Espera!',
-    'baby_shower.hero.names': 'Familia Gómez',
+    'baby_shower.hero.names': 'Baby Emma',
     'baby_shower.hero.dateLocation': '24 Agosto • Casa Familia',
     'baby_shower.welcome.title': 'Baby Shower',
     'baby_shower.welcome.message': '¡Estamos esperando a nuestro pequeño milagro y queremos celebrar contigo!',
@@ -291,7 +299,8 @@ export const es: TranslationDictionary = {
     'baby_shower.events.0.mapText': 'Ubicación',
 
     'baby_shower.date': '2026-08-24T16:30:00',
-    'baby_shower.calendar.title': 'Baby Shower Fam. Gómez',
+    'baby_shower.calendar.title': 'Baby Shower de Emma',
+    'baby_shower.gallery.hashtag': '#babyemma',
     'baby_shower.calendar.location': 'Comuna',
     'baby_shower.calendar.description': 'Esperando un nuevo integrante',
 
@@ -300,11 +309,11 @@ export const es: TranslationDictionary = {
     'baby_shower.bank.numero': '444555666',
     'baby_shower.bank.rut': '10.999.888-7',
     'baby_shower.bank.titular': 'MAMÁ',
-    'baby_shower.rsvp.hostName': 'Dani y Fer',
+    'baby_shower.rsvp.hostName': 'Marta y José',
 
     // 10. Corporate Dinner
     'corporate_dinner.hero.subtitle': 'Despedimos el Año',
-    'corporate_dinner.hero.names': 'CorpGroup 2026',
+    'corporate_dinner.hero.names': 'Cena Corporativa',
     'corporate_dinner.hero.dateLocation': '18 Diciembre • Club Las Vizcachas',
     'corporate_dinner.welcome.title': 'Cena Corporativa',
     'corporate_dinner.welcome.message': 'Cerramos un año lleno de desafíos y queremos agradecer tu compromiso con una gran fiesta.',
@@ -322,8 +331,9 @@ export const es: TranslationDictionary = {
     'corporate_dinner.events.0.mapText': 'Ruta',
 
     'corporate_dinner.date': '2026-12-18T12:30:00',
-    'corporate_dinner.calendar.title': 'Fiesta Fin de Año CorpGroup',
+    'corporate_dinner.calendar.title': 'Cena Fin de Año',
+    'corporate_dinner.gallery.hashtag': '#cenacorporativa',
     'corporate_dinner.calendar.location': 'Club Las Vizcachas',
     'corporate_dinner.calendar.description': 'Fiesta corporativa',
-    'corporate_dinner.rsvp.hostName': 'Recursos Humanos',
+    'corporate_dinner.rsvp.hostName': 'RRHH',
 };

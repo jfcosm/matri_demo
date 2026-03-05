@@ -1,8 +1,10 @@
 
 import React from 'react';
 import { INSTAGRAM_DETAILS } from '../constants';
+import { useAppContext } from '../context/AppContext';
 
 const Gallery: React.FC = () => {
+  const { currentTemplate, t } = useAppContext();
   return (
     <div className="w-full py-16 px-6 bg-[var(--color-bg)] rounded-[40px] border border-dashed border-[var(--color-primary)]/30 flex flex-col items-center justify-center text-center space-y-6 animate-in fade-in zoom-in duration-700">
       <div className="p-4 bg-white rounded-full shadow-sm text-[var(--color-primary)]">
@@ -20,7 +22,7 @@ const Gallery: React.FC = () => {
           PRÓXIMAMENTE APARECERÁN ACÁ LAS FOTOS QUE SUBAS A INSTAGRAM CON EL HASHTAG
         </p>
         <p className="text-2xl md:text-3xl font-serif italic text-[var(--color-text)] opacity-90 py-2">
-          {INSTAGRAM_DETAILS.hashtag}
+          {t(`${currentTemplate}.gallery.hashtag`)}
         </p>
         <div className="pt-4">
           <a

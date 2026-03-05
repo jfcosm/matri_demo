@@ -50,7 +50,7 @@ export const TEMPLATES: Template[] = [
             background: '#fdfcfb',
             text: '#4a4a4a',
             fonts: { script: 'Great Vibes', serif: 'Playfair Display', sans: 'Montserrat' },
-            heroImage: { url: 'matri_hero.jpg', placeholder: 'https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&q=80&w=1000' }
+            heroImage: { url: 'matri_hero.jpg', placeholder: 'https://picsum.photos/seed/44c2ag/1000/800' }
         }
     },
     {
@@ -62,7 +62,7 @@ export const TEMPLATES: Template[] = [
             background: '#F0F8FF',
             text: '#2F4F4F',
             fonts: { script: 'Fredoka', serif: 'Comic Neue', sans: 'Quicksand' },
-            heroImage: { url: 'https://images.unsplash.com/photo-1530103862677-de3e1c6628b0?auto=format&fit=crop&q=80&w=1000', placeholder: 'https://images.unsplash.com/photo-1530103862677-de3e1c6628b0?auto=format&fit=crop&q=80&w=1000' }
+            heroImage: { url: 'https://picsum.photos/seed/7v82g/1000/800', placeholder: 'https://picsum.photos/seed/e07pz5/1000/800' }
         }
     },
     {
@@ -74,7 +74,7 @@ export const TEMPLATES: Template[] = [
             background: '#121212',
             text: '#E0E0E0',
             fonts: { script: 'Dancing Script', serif: 'Cinzel', sans: 'Lato' },
-            heroImage: { url: 'https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&q=80&w=1000', placeholder: 'https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&q=80&w=1000' }
+            heroImage: { url: 'https://picsum.photos/seed/sms6zs/1000/800', placeholder: 'https://picsum.photos/seed/5y81ko/1000/800' }
         }
     },
     {
@@ -86,7 +86,7 @@ export const TEMPLATES: Template[] = [
             background: '#FFFFFF',
             text: '#555555',
             fonts: { script: 'Alex Brush', serif: 'Lora', sans: 'Open Sans' },
-            heroImage: { url: 'https://images.unsplash.com/photo-1438032005730-c7a3e01160ee?auto=format&fit=crop&q=80&w=1000', placeholder: 'https://images.unsplash.com/photo-1438032005730-c7a3e01160ee?auto=format&fit=crop&q=80&w=1000' }
+            heroImage: { url: 'https://picsum.photos/seed/7u3tut/1000/800', placeholder: 'https://picsum.photos/seed/o9j6fs/1000/800' }
         }
     },
     {
@@ -98,7 +98,7 @@ export const TEMPLATES: Template[] = [
             background: '#0a0a0a',
             text: '#ffffff',
             fonts: { script: 'Permanent Marker', serif: 'Russo One', sans: 'Roboto Mono' },
-            heroImage: { url: 'https://images.unsplash.com/photo-1540039155732-d674d5e8fee0?auto=format&fit=crop&q=80&w=1000', placeholder: 'https://images.unsplash.com/photo-1540039155732-d674d5e8fee0?auto=format&fit=crop&q=80&w=1000' }
+            heroImage: { url: 'https://picsum.photos/seed/iyrab/1000/800', placeholder: 'https://picsum.photos/seed/v8l66f/1000/800' }
         }
     },
     {
@@ -110,7 +110,7 @@ export const TEMPLATES: Template[] = [
             background: '#f8f9fa',
             text: '#212529',
             fonts: { script: 'Caveat', serif: 'Merriweather', sans: 'Inter' },
-            heroImage: { url: 'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&q=80&w=1000', placeholder: 'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&q=80&w=1000' }
+            heroImage: { url: 'https://picsum.photos/seed/mhjaw7/1000/800', placeholder: 'https://picsum.photos/seed/hikrm/1000/800' }
         }
     },
     {
@@ -122,7 +122,7 @@ export const TEMPLATES: Template[] = [
             background: '#fff8dc',
             text: '#3e2723',
             fonts: { script: 'Homemade Apple', serif: 'Crimson Text', sans: 'PT Sans' },
-            heroImage: { url: 'https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&q=80&w=1000', placeholder: 'https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&q=80&w=1000' }
+            heroImage: { url: 'https://picsum.photos/seed/kf5djv/1000/800', placeholder: 'https://picsum.photos/seed/ow9p6l/1000/800' }
         }
     },
     {
@@ -134,7 +134,7 @@ export const TEMPLATES: Template[] = [
             background: '#0a0a1a',
             text: '#f5f5f5',
             fonts: { script: 'Pinyon Script', serif: 'Cormorant Garamond', sans: 'Raleway' },
-            heroImage: { url: 'https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&q=80&w=1000', placeholder: 'https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&q=80&w=1000' }
+            heroImage: { url: 'https://picsum.photos/seed/rctgz/1000/800', placeholder: 'https://picsum.photos/seed/plgown/1000/800' }
         }
     },
     {
@@ -146,7 +146,7 @@ export const TEMPLATES: Template[] = [
             background: '#FFFAFA',
             text: '#696969',
             fonts: { script: 'Pacifico', serif: 'Balsamiq Sans', sans: 'Nunito' },
-            heroImage: { url: 'https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&q=80&w=1000', placeholder: 'https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&q=80&w=1000' }
+            heroImage: { url: 'https://picsum.photos/seed/sfmcmb/1000/800', placeholder: 'https://picsum.photos/seed/lnlg7r/1000/800' }
         }
     },
     {
@@ -158,7 +158,7 @@ export const TEMPLATES: Template[] = [
             background: '#ffffff',
             text: '#333333',
             fonts: { script: 'Satisfy', serif: 'Libre Baskerville', sans: 'Work Sans' },
-            heroImage: { url: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&q=80&w=1000', placeholder: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&q=80&w=1000' }
+            heroImage: { url: 'https://picsum.photos/seed/bgv5xf/1000/800', placeholder: 'https://picsum.photos/seed/vcu6a/1000/800' }
         }
     }
 ];
