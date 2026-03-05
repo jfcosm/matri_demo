@@ -28,9 +28,9 @@ const Details: React.FC = () => {
   return (
     <div className={`grid grid-cols-1 ${events.length > 1 ? 'md:grid-cols-2' : 'max-w-md mx-auto'} gap-12 md:gap-24 py-8 items-start`}>
       {events.map((event, index) => (
-        <div key={index} className="text-center space-y-4 group p-8 rounded-3xl border border-transparent hover:border-[#8fa189]/10 hover:bg-white hover:shadow-xl transition-all duration-500">
+        <div key={index} className="text-center space-y-4 group p-8 rounded-3xl border border-transparent hover:border-[var(--color-primary)]/10 hover:bg-white hover:shadow-xl transition-all duration-500">
           <div className="flex justify-center mb-2">
-            <div className="p-5 bg-[#f4f6f3] rounded-full transition-all group-hover:bg-[#8fa189] group-hover:text-white duration-500 text-[#8fa189]">
+            <div className="p-5 bg-[var(--color-bg)] rounded-full transition-all group-hover:bg-[var(--color-primary)] group-hover:text-white duration-500 text-[var(--color-primary)]">
               {/* Dynamic icon selection based on index (just a simple toggle for two events, could map more shapes) */}
               {index === 0 ? (
                 <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -44,28 +44,28 @@ const Details: React.FC = () => {
               )}
             </div>
           </div>
-          <h3 className="uppercase tracking-[0.4em] font-bold text-[10px] text-gray-400">{event.title}</h3>
-          <p className="font-serif italic text-3xl md:text-4xl text-gray-800">{event.venue}</p>
-          <div className="flex flex-col items-center text-gray-500 text-sm py-4">
+          <h3 className="uppercase tracking-[0.4em] font-bold text-[10px] text-[var(--color-text)] opacity-50">{event.title}</h3>
+          <p className="font-serif italic text-3xl md:text-4xl text-[var(--color-text)] opacity-90">{event.venue}</p>
+          <div className="flex flex-col items-center text-[var(--color-text)] opacity-60 text-sm py-4">
             <span className="mb-3 text-xs uppercase tracking-widest opacity-60 font-medium">{event.subtitle}</span>
             <div className="flex items-center gap-8 mb-4">
               <div className="text-center">
-                <span className="block text-2xl md:text-3xl font-light text-[#8fa189]">{event.date}</span>
+                <span className="block text-2xl md:text-3xl font-light text-[var(--color-primary)]">{event.date}</span>
                 <span className="text-[9px] uppercase tracking-widest font-bold">{event.year}</span>
               </div>
-              <div className="w-px h-10 bg-[#8fa189]/20"></div>
+              <div className="w-px h-10 bg-[var(--color-primary)]/20"></div>
               <div className="text-center">
-                <span className="block text-2xl md:text-3xl font-light text-[#8fa189]">{event.time}</span>
+                <span className="block text-2xl md:text-3xl font-light text-[var(--color-primary)]">{event.time}</span>
                 <span className="text-[9px] uppercase tracking-widest font-bold">{event.timeNote}</span>
               </div>
             </div>
-            <p className="text-xs italic text-gray-400 max-w-[200px]">{event.address}</p>
+            <p className="text-xs italic text-[var(--color-text)] opacity-50 max-w-[200px]">{event.address}</p>
           </div>
           <a
             href={event.mapUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 border border-[#8fa189]/40 text-[#8fa189] px-8 py-3 rounded-full hover:bg-[#8fa189] hover:text-white transition-all text-[10px] uppercase tracking-widest font-bold shadow-sm"
+            className="inline-flex items-center gap-2 border border-[var(--color-primary)]/40 text-[var(--color-primary)] px-8 py-3 rounded-full hover:bg-[var(--color-primary)] hover:text-white transition-all text-[10px] uppercase tracking-widest font-bold shadow-sm"
           >
             <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
             {event.mapText}

@@ -1,22 +1,24 @@
 
 import React from 'react';
-import { HERO_IMAGE } from '../constants';
 import AudioPlayer from './AudioPlayer';
 import { useAppContext } from '../context/AppContext';
+import { TEMPLATES } from '../data/templates';
 
 const Hero: React.FC = () => {
   const { currentTemplate, t } = useAppContext();
+  const activeTemplate = TEMPLATES.find(temp => temp.id === currentTemplate) || TEMPLATES[0];
+  const heroImage = activeTemplate.theme.heroImage;
 
   return (
     <header className="relative h-screen w-full overflow-hidden flex flex-col justify-end">
       {/* Background Image with Overlay */}
-      <div className="absolute inset-0 z-0 bg-gray-100">
+      <div className="absolute inset-0 z-0 bg-white/20">
         <img
-          src={HERO_IMAGE.url}
-          alt="Nuestra Boda"
+          src={heroImage.url}
+          alt="Banner"
           className="w-full h-full object-cover"
           onError={(e) => {
-            (e.target as HTMLImageElement).src = HERO_IMAGE.placeholder;
+            (e.target as HTMLImageElement).src = heroImage.placeholder;
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent"></div>

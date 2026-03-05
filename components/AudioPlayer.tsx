@@ -90,7 +90,7 @@ const AudioPlayer: React.FC = () => {
         <button 
           onClick={togglePlay}
           title={isPlaying ? "Pausar" : "Reproducir"}
-          className="w-11 h-11 rounded-full bg-[#8fa189] text-white flex items-center justify-center shadow-lg hover:bg-[#7a8c75] transition-all transform active:scale-90 flex-shrink-0"
+          className="w-11 h-11 rounded-full bg-[var(--color-primary)] text-white flex items-center justify-center shadow-lg hover:bg-[var(--color-primary)] transition-all transform active:scale-90 flex-shrink-0"
         >
           {isPlaying ? (
             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -114,7 +114,7 @@ const AudioPlayer: React.FC = () => {
           
           {/* Barra de progreso decorativa */}
           <div className="w-full h-[2px] bg-white/10 mt-1.5 rounded-full overflow-hidden">
-            <div className={`h-full bg-[#8fa189] transition-all ${isPlaying ? 'w-full' : 'w-0'}`} 
+            <div className={`h-full bg-[var(--color-primary)] transition-all ${isPlaying ? 'w-full' : 'w-0'}`} 
                  style={{ 
                    transitionDuration: isPlaying ? '270s' : '0.5s',
                    transitionTimingFunction: 'linear'

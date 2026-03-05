@@ -8,18 +8,31 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: 'var(--color-primary)',
+              bg: 'var(--color-bg)',
+              base: 'var(--color-text)'
+            }
+          }
+        }
+      }
+    </script>
     <style>
-        .font-script { font-family: 'Great Vibes', cursive; }
-        .font-serif { font-family: 'Playfair Display', serif; }
-        .font-sans { font-family: 'Montserrat', sans-serif; }
+        .font-script { font-family: var(--font-script, 'Great Vibes'), cursive; }
+        .font-serif { font-family: var(--font-serif, 'Playfair Display'), serif; }
+        .font-sans { font-family: var(--font-sans, 'Montserrat'), sans-serif; }
         
         html {
             scroll-behavior: smooth;
         }
 
         body {
-            background-color: #fdfcfb;
-            color: #4a4a4a;
+            background-color: var(--color-bg, #fdfcfb);
+            color: var(--color-text, #4a4a4a);
         }
 
         ::-webkit-scrollbar {

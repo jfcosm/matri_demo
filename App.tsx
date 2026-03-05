@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Countdown from './components/Countdown';
@@ -13,10 +13,36 @@ import { TEMPLATES } from './data/templates';
 const App: React.FC = () => {
   const { currentTemplate, t } = useAppContext();
   const activeTemplate = TEMPLATES.find(temp => temp.id === currentTemplate) || TEMPLATES[0];
-  const { features } = activeTemplate;
+  const { features, theme } = activeTemplate;
+
+  useEffect(() => {
+    // Dynamic Font Loader
+    const linkId = 'dynamic-google-fonts';
+    let link = document.getElementById(linkId) as HTMLLinkElement;
+    if (!link) {
+      link = document.createElement('link');
+      link.id = linkId;
+      link.rel = 'stylesheet';
+      document.head.appendChild(link);
+    }
+
+    // Construct Google Fonts URL with the 3 active fonts
+    const { script, serif, sans } = theme.fonts;
+    const fontsUrl = `https://fonts.googleapis.com/css2?family=${script.replace(/ /g, '+')}&family=${serif.replace(/ /g, '+')}&family=${sans.replace(/ /g, '+')}&display=swap`;
+    link.href = fontsUrl;
+  }, [theme]);
+
+  const cssVariables = {
+    '--color-primary': theme.primary,
+    '--color-bg': theme.background,
+    '--color-text': theme.text,
+    '--font-script': `"${theme.fonts.script}", cursive`,
+    '--font-serif': `"${theme.fonts.serif}", serif`,
+    '--font-sans': `"${theme.fonts.sans}", sans-serif`,
+  } as React.CSSProperties;
 
   return (
-    <div className="min-h-screen font-sans bg-[#fdfcfb] selection:bg-[#8fa189] selection:text-white overflow-x-hidden">
+    <div style={cssVariables} className="min-h-screen bg-[var(--color-bg)] text-[var(--color-text)] font-sans selection:bg-[var(--color-primary)] selection:text-white overflow-x-hidden">
       <Navbar />
       <main className="opacity-100 scale-100 transition-opacity duration-1000">
         <Hero />
@@ -25,16 +51,16 @@ const App: React.FC = () => {
 
           <section id="welcome" className="text-center pt-8 md:pt-16 animate-in fade-in slide-in-from-bottom-4 duration-1000 max-w-2xl mx-auto">
             <div className="flex justify-center mb-6">
-              <div className="w-12 h-px bg-[#8fa189]/30 self-center"></div>
-              <div className="mx-4 text-[#8fa189]">
+              <div className="w-12 h-px bg-[var(--color-primary)] opacity-30 self-center"></div>
+              <div className="mx-4 text-[var(--color-primary)]">
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" /></svg>
               </div>
-              <div className="w-12 h-px bg-[#8fa189]/30 self-center"></div>
+              <div className="w-12 h-px bg-[var(--color-primary)] opacity-30 self-center"></div>
             </div>
-            <h2 className="font-serif italic text-4xl md:text-5xl mb-6 text-gray-800">
+            <h2 className="font-serif italic text-4xl md:text-5xl mb-6 text-[var(--color-text)] opacity-90">
               {t(`${currentTemplate}.welcome.title`)}
             </h2>
-            <p className="text-gray-500 leading-relaxed font-light text-sm md:text-base px-4">
+            <p className="text-[var(--color-text)] opacity-60 leading-relaxed font-light text-sm md:text-base px-4">
               {t(`${currentTemplate}.welcome.message`)}
             </p>
           </section>
@@ -50,8 +76,8 @@ const App: React.FC = () => {
           {features.showGallery && (
             <section id="gallery" className="space-y-10">
               <div className="text-center">
-                <h3 className="uppercase tracking-[0.3em] font-bold text-xs text-gray-400 mb-2">Nuestro Álbum</h3>
-                <p className="font-serif italic text-xl md:text-2xl text-gray-800 mb-8">Momentos juntos</p>
+                <h3 className="uppercase tracking-[0.3em] font-bold text-xs text-[var(--color-text)] opacity-50 mb-2">Nuestro Álbum</h3>
+                <p className="font-serif italic text-xl md:text-2xl text-[var(--color-text)] opacity-90 mb-8">Momentos juntos</p>
               </div>
               <Gallery />
             </section>
@@ -59,8 +85,8 @@ const App: React.FC = () => {
 
           {features.showTickets && (
             <section className="text-center py-12">
-              <h3 className="font-serif italic text-3xl text-gray-800 mb-4">Adquiere tus entradas</h3>
-              <button className="bg-gray-900 text-white px-8 py-3 rounded-full hover:bg-gray-800 transition-colors uppercase tracking-widest text-xs font-bold">
+              <h3 className="font-serif italic text-3xl text-[var(--color-text)] opacity-90 mb-4">Adquiere tus entradas</h3>
+              <button className="bg-[var(--color-primary)] text-white text-white px-8 py-3 rounded-full hover:bg-gray-800 transition-colors uppercase tracking-widest text-xs font-bold">
                 Comprar ahora
               </button>
             </section>
